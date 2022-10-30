@@ -36,7 +36,7 @@ fun CoinListItem(
             overflow = TextOverflow.Ellipsis)
         
             Text(text = if (coin.is_active) "active" else "inactive",
-                color = if (coin.is_active) Color.Green else Color.Red,,
+                color = if (coin.is_active) Color.Green else Color.Red,
                 fontStyle = FontStyle.Italic,
                 textAlign =  TextAlign.End,
                 style = MaterialTheme.typography.body2,
