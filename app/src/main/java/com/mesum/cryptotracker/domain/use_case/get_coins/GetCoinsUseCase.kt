@@ -7,11 +7,8 @@ import com.mesum.cryptotracker.domain.repository.CoinRepository
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
 import java.io.IOException
-import java.lang.Exception
-import java.util.concurrent.Flow
-import javax.inject.Inject
 
-class GetCoinsUseCase @Inject constructor(
+class GetCoinsUseCase constructor(
     private val repository : CoinRepository
     ){
 

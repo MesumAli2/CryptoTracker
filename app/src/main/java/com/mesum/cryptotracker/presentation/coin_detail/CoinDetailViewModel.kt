@@ -8,14 +8,11 @@ import androidx.lifecycle.viewModelScope
 import com.mesum.cryptotracker.common.Constants
 import com.mesum.cryptotracker.common.Resource
 import com.mesum.cryptotracker.domain.use_case.get_coin.GetCoinUseCase
-import com.mesum.cryptotracker.domain.use_case.get_coins.GetCoinsUseCase
-import dagger.hilt.android.lifecycle.HiltViewModel
+
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
-import javax.inject.Inject
 
-@HiltViewModel
-class CoinDetailViewModel @Inject constructor(
+class CoinDetailViewModel constructor(
     private val  getCoinUseCase : GetCoinUseCase,
     savedStateHandle: SavedStateHandle
 

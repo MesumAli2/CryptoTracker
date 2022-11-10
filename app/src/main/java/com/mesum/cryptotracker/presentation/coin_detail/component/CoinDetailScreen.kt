@@ -3,7 +3,6 @@ package com.mesum.cryptotracker.presentation.coin_detail.component
 import com.mesum.cryptotracker.presentation.coin_detail.CoinDetailViewModel
 import com.mesum.cryptotracker.presentation.coin_list.CoinListViewModel
 
-package com.mesum.cryptotracker.presentation.coin_list
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -31,9 +30,7 @@ fun Screen.CoinDetailScreen(
 
     val state = viewModel.state.value
     Box(modifier = Modifier.fillMaxSize()){
-        state.coins.let { coin ->
 
-        }
 
         if (state.error.isNotBlank()){
             Text(text =state.error,
